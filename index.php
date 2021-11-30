@@ -11,6 +11,9 @@ require 'db_conn.php';
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <center>
+        <h1 style="color: white;">LIST TUGAS ANDA</h1>
+    </center>
     <div class="main-section">
        <div class="add-section">
           <form action="app/add.php" method="POST" autocomplete="off">
@@ -18,13 +21,13 @@ require 'db_conn.php';
                 <input type="text" 
                      name="title" 
                      style="border-color: #ff6666"
-                     placeholder="This field is required" />
+                     placeholder="Harap Masukan Kata"/>
               <button type="submit">Add &nbsp; <span>&#43;</span></button>
 
              <?php }else{ ?>
               <input type="text" 
                      name="title" 
-                     placeholder="What do you need to do?" />
+                     placeholder="Masukan Apa Tugas Mu?" />
               <button type="submit">Add &nbsp; <span>&#43;</span></button>
              <?php } ?>
           </form>
